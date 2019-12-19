@@ -1,0 +1,110 @@
+{
+    "id": "e79c0bca72587e2001644f08728e89dd",
+    "name": "Freesound",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "47309dc08171d6722900af2d05178cbf",
+            "name": "Search sounds",
+            "url": "httpswww.freesound.org\/apiv2\/search\/text",
+            "description": "This resource allows searching sounds in Freesound by matching their tags and other kinds of metadata.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "query",
+                    "description": "The query! The query is the main parameter used to define a query. You can type several terms separated by spaces or phrases wrapped inside quote ????????? characters. For every term, you can also use ???+??? and ???-??? modifier characters to indicate that a term is ???mandatory??? or ???prohibited??? (by default, terms are considered to be ???mandatory???). For example, in a query such as query=term_a -term_b, sounds including term_b will not match the search criteria. The query does a weighte",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "filter",
+                    "description": "Allows filtering query results. See below for more information.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Indicates how query results should be sorted. See below for a list of the sorting options. By default `sort=score`. <p> <table>\n  <tr>\n    <th>Option<\/th>\n    <th>Explanation<\/th>\n  <\/tr>\n  <tr>\n    <td>score<\/td>\n    <td>Sort by a relevance score returned by our search engine (default).<\/td>\n  <\/tr>\n  <tr>\n    <td>duration_desc\n    <td>Sort by the duration of the sounds, longest sounds first.\n  <\/tr>\n  <tr>\n    <td>duration_asc\n    <td>Same as above, but shortest sounds first.\n  <\/tr>\n  <tr>\n  ",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "group_by_pack",
+                    "description": "This parameter represents a boolean option to indicate whether to collapse results belonging to sounds of the same pack into single entries in the results list. If `group_by_pack=1` and search results contain more than one sound that belongs to the same pack, only one sound for each distinct pack is returned (sounds with no packs are returned as well). However, the returned sound will feature two extra properties to access these other sounds omitted from the results list: `n_from_same_pack`: ind",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "Query results are paginated, this parameter indicates what page should be returned. By default `page=1`.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "Indicates the number of sounds per page to include in the result. By default `page_size=15`, and the maximum is `page_size=150`. Not that with bigger `page_size`, more data will need to be transferred.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e79c0bca72587e2001644f08728e89dd",
+            "rawModeData": ""
+        },
+        {
+            "id": "04f68d8f2ac9bb79af73f0e1efa0e008",
+            "name": "Details of a sound",
+            "url": "httpswww.freesound.org\/apiv2\/sounds\/{soundId}",
+            "description": "This resource allows the retrieval of detailed information about a sound.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "soundId",
+                    "description": "ID of the sound that needs to be fetched",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e79c0bca72587e2001644f08728e89dd",
+            "rawModeData": ""
+        }
+    ]
+}
