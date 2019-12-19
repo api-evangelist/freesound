@@ -1,0 +1,90 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Freesound",
+        "description": "With the Freesound APIv2 you can browse, search, and retrieve information about Freesound users, packs, and the sounds themselves of course. You can find similar sounds to a given target (based on content analysis) and retrieve automatically extracted features from audio files, as well as perform advanced queries combining content analysis features and other metadata (tags, etc...). With the Freesound APIv2, you can also upload, comment, rate and bookmark sounds!",
+        "termsOfService": "http:\/\/freesound.org\/help\/tos_api\/"
+    },
+    "servers": [
+        "httpswww.freesound.org\/apiv2"
+    ],
+    "paths": {
+        "\/search\/text": {
+            "get": {
+                "summary": "Search sounds",
+                "description": "This resource allows searching sounds in Freesound by matching their tags and other kinds of metadata.",
+                "operationId": "SearchText",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "The query! The query is the main parameter used to define a query. You can type several terms separated by spaces or phrases wrapped inside quote ????????? characters. For every term, you can also use ???+??? and ???-??? modifier characters to indicate that a term is ???mandatory??? or ???prohibited??? (by default, terms are considered to be ???mandatory???). For example, in a query such as query=term_a -term_b, sounds including term_b will not match the search criteria. The query does a weighte"
+                    },
+                    {
+                        "name": "filter",
+                        "in": "query",
+                        "description": "Allows filtering query results. See below for more information."
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Indicates how query results should be sorted. See below for a list of the sorting options. By default `sort=score`. <p> <table>\n  <tr>\n    <th>Option<\/th>\n    <th>Explanation<\/th>\n  <\/tr>\n  <tr>\n    <td>score<\/td>\n    <td>Sort by a relevance score returned by our search engine (default).<\/td>\n  <\/tr>\n  <tr>\n    <td>duration_desc\n    <td>Sort by the duration of the sounds, longest sounds first.\n  <\/tr>\n  <tr>\n    <td>duration_asc\n    <td>Same as above, but shortest sounds first.\n  <\/tr>\n  <tr>\n  "
+                    },
+                    {
+                        "name": "group_by_pack",
+                        "in": "query",
+                        "description": "This parameter represents a boolean option to indicate whether to collapse results belonging to sounds of the same pack into single entries in the results list. If `group_by_pack=1` and search results contain more than one sound that belongs to the same pack, only one sound for each distinct pack is returned (sounds with no packs are returned as well). However, the returned sound will feature two extra properties to access these other sounds omitted from the results list: `n_from_same_pack`: ind"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Query results are paginated, this parameter indicates what page should be returned. By default `page=1`."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "Indicates the number of sounds per page to include in the result. By default `page_size=15`, and the maximum is `page_size=150`. Not that with bigger `page_size`, more data will need to be transferred."
+                    }
+                ]
+            }
+        },
+        "\/sounds\/{soundId}": {
+            "get": {
+                "summary": "Details of a sound",
+                "description": "This resource allows the retrieval of detailed information about a sound.",
+                "operationId": "GetSoundById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "soundId",
+                        "in": "path",
+                        "description": "ID of the sound that needs to be fetched"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Sound": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
