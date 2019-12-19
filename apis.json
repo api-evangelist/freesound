@@ -1,0 +1,112 @@
+{
+    "name": "Freesound",
+    "description": "<p>Freesound aims to create a huge collaborative database of audio snippets, samples, recordings, bleeps, ... released under Creative Commons licenses that allow their reuse. Freesound provides new and interesting ways of accessing these samples, allowing users to browse the sounds in new ways using keywords, a \"sounds-like\" type of browsing and more--upload and download sounds to and from the database, under the same creative commons license, and interact with fellow sound-artists!<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Freesound_project_website_logo.png",
+    "tags": [
+        "api provider",
+        "general data",
+        "have api",
+        "have swagger",
+        "music",
+        "sounds"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/freesound\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Freesound",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/Freesound_project_website_logo.png",
+            "humanURL": "https:\/\/freesound.org",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/freesound-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/freesound.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/blog.freesound.org\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/freesound"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/freesound.org\/help\/developers\/"
+        },
+        {
+            "type": "Documentation",
+            "url": "https:\/\/freesound.org\/docs\/api\/"
+        },
+        {
+            "type": "Forums",
+            "url": "https:\/\/freesound.org\/forum\/"
+        },
+        {
+            "type": "Login",
+            "url": "https:\/\/freesound.org\/home\/login\/?next=\/apiv2\/apply\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-16-06-54.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-21-53-38.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-04-00-19-49.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-22-43-12.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-22-43-18.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-22-43-24.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-22-43-36.json"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28141-2019-09-03-22-43-42.json"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/freesound.org\/home\/login\/?next=\/apiv2\/apply\/"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "https:\/\/freesound.org\/help\/tos_web\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/freesounddev?lang=en"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/freesound.org"
+        }
+    ]
+}
