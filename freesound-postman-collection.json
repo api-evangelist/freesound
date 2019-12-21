@@ -1,5 +1,5 @@
 {
-    "id": "e79c0bca72587e2001644f08728e89dd",
+    "id": "8e12ef987325510fa009c6504cd2acde",
     "name": "Freesound",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "47309dc08171d6722900af2d05178cbf",
+            "id": "263993b4ada58fc12d57c97f1b47ec09",
             "name": "Search sounds",
             "url": "httpswww.freesound.org\/apiv2\/search\/text",
             "description": "This resource allows searching sounds in Freesound by matching their tags and other kinds of metadata.",
@@ -72,11 +72,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e79c0bca72587e2001644f08728e89dd",
+            "collectionId": "8e12ef987325510fa009c6504cd2acde",
             "rawModeData": ""
         },
         {
-            "id": "04f68d8f2ac9bb79af73f0e1efa0e008",
+            "id": "a42fff7a28dd08464410ae39581bcd2b",
             "name": "Details of a sound",
             "url": "httpswww.freesound.org\/apiv2\/sounds\/{soundId}",
             "description": "This resource allows the retrieval of detailed information about a sound.",
@@ -103,7 +103,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e79c0bca72587e2001644f08728e89dd",
+            "collectionId": "8e12ef987325510fa009c6504cd2acde",
             "rawModeData": ""
         }
     ]
