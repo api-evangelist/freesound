@@ -39,7 +39,6 @@ apis:
   - name: Freesound
     description: "Music Samples"
     humanURL: https://freesound.org/docs/api/
-    baseURL: https://freesound.org/docs/api/
     tags:
       - Music
     properties:
